@@ -167,7 +167,7 @@ input::placeholder {
 
 /* Responsive to Phone */
 @media (max-width: 480px) {
-  .container {
+  .login-container {
     padding: 27px;
   }
 

@@ -203,7 +203,7 @@ input::placeholder {
 
 /* Responsive to Phone */
 @media (max-width: 480px) {
-  .container {
+  .register-container {
     padding: 27px;
   }
 
@@ -217,7 +217,7 @@ input::placeholder {
   }
 
   .register-container .title-form h1 {
-    font-size: 5px;
+    font-size: 20px;
   }
 
   .register-container button {
