@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+body {
+  width: 100%;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: rgba(24, 26, 28, 1);
+}
+
+.fas {
+  color: rgba(193, 194, 196, 1);
+}
+
+.container {
+  width: 100%;
+}
+

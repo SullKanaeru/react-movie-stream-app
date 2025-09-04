@@ -1,0 +1,294 @@
+/* Film Carousel CSS */
+.continues-film,
+.premium-film,
+.top-rating-film,
+.trending-film,
+.new-release-film {
+  width: 100%;
+  height: fit-content;
+  color: white;
+  padding: 40px 80px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.continues-film h1,
+.top-rating-film h1,
+.premium-film h1,
+.trending-film h1,
+.new-release-film h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.film-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.film-carousel .film-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Swiper container */
+.swiper-container {
+  width: 100%;
+  padding: 10px 0 50px;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+
+.premium-film .film-cover,
+.top-rating-film .film-cover,
+.trending-film .film-cover,
+.new-release-film .film-cover {
+  width: 100%;
+  height: 365px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.continues-film .film-cover {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.film-cover .film-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  justify-content: space-between;
+  bottom: 0;
+  position: absolute;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.continues-film .film-cover .film-detail h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.continues-film .film-cover .film-detail p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 6px;
+  margin: 0;
+}
+
+.icon-star {
+  color: #FFD700;
+}
+
+/* Swiper Navigation */
+.button-prev,
+.button-next {
+  color: #fff;
+  background: rgba(47, 51, 52, 0.7);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  cursor: pointer;
+}
+
+.button-prev:hover,
+.button-next:hover {
+  opacity: 1;
+  background: rgba(47, 51, 52, 0.9);
+}
+
+.button-prev {
+  left: -20px;
+}
+
+.button-next {
+  right: -20px;
+}
+
+.button-prev i,
+.button-next i {
+  font-size: 20px;
+  color: white;
+}
+/* Premium Tag */
+.premium-tag {
+  padding: 8px 16px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(183, 162, 7, 1);
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  z-index: 5;
+}
+
+/* New Episode Tag */
+.new-episode-tag {
+  padding: 8px 16px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(15, 30, 147, 0.9);
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  z-index: 5;
+}
+
+/* Top Film Tag */
+.top-tag {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 8px;
+  background-color: rgba(183, 31, 29, 0.9);
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  line-height: 140%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  z-index: 5;
+}
+
+/* Film Overview Tooltip */
+.film-overview-tooltip {
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  max-width: 320px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .continues-film,
+  .top-rating-film,
+  .trending-film,
+  .new-release-film {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .continues-film,
+  .top-rating-film,
+  .trending-film,
+  .new-release-film {
+    padding: 30px 40px;
+  }
+  
+  .top-rating-film .film-cover,
+  .trending-film .film-cover,
+  .new-release-film .film-cover {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .continues-film,
+  .premium-film,
+  .top-rating-film,
+  .trending-film,
+  .new-release-film {
+    padding: 20px;
+  }
+  
+  .continues-film h1,
+  .top-rating-film h1,
+  .trending-film h1,
+  .new-release-film h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .premium-film .film-cover,
+  .top-rating-film .film-cover,
+  .trending-film .film-cover,
+  .new-release-film .film-cover {
+    height: 200px;
+  }
+  
+  .continues-film .film-cover {
+    height: 150px;
+  }
+  
+  .film-cover .film-detail {
+    padding: 12px;
+  }
+  
+  .continues-film .film-cover .film-detail h3 {
+    font-size: 14px;
+  }
+  
+  .continues-film .film-cover .film-detail p {
+    font-size: 12px;
+  }
+  
+  .new-episode-tag {
+    padding: 4px 8px;
+    font-size: 10px;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .top-tag {
+    font-size: 10px;
+    padding: 4px 6px;
+    right: 8px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Memastikan Swiper container tidak overflow */
+.swiper-container {
+  overflow: hidden;
+}
+
+/* Memastikan gambar dalam film cover terlihat baik */
+.film-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

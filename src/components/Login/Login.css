@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.login-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/login_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 450px;
+  height: fit-content;
+  background-color: rgba(24, 26, 28, 0.84);
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-container .logo-img {
+  width: 163px;
+  object-fit: contain;
+}
+
+.login-container .title-form {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 7px;
+}
+
+.login-container .input-container label {
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  width: 100%;
+  border-radius: 24px;
+  padding: 15px 20px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(193, 194, 196, 1);
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.password-wrapper i {
+  color: rgba(157, 158, 161, 1);
+}
+
+.password-icon-container {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(193, 194, 196, 1);
+  font-size: 16px;
+}
+
+.toggle-password {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password .icon-eye-slash {
+  display: none;
+  pointer-events: none;
+}
+
+.password-icon-container #toggle:checked ~ .password-label .icon-eye {
+  display: none;
+  pointer-events: none;
+}
+
+.password-icon-container #toggle:checked ~ .password-label .icon-eye-slash {
+  display: flex;
+  pointer-events: auto;
+}
+
+.help-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.help-container p {
+  color: rgba(193, 194, 196, 1);
+  font-style: normal;
+}
+
+.help-container a {
+  color: white;
+  text-decoration: none;
+}
+.button-container {
+  width: 100%;
+  height: 150px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container button {
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  width: 100%;
+  border-radius: 24px;
+  padding: 15px 20px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: white;
+}
+
+.button-container p {
+  font-size: small;
+  color: rgba(193, 194, 196, 1);
+}
+
+#masuk-button {
+  background-color: rgba(61, 65, 66, 1);
+  cursor: pointer;
+}
+
+#masuk-google-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* Responsive to Phone */
+@media (max-width: 480px) {
+  .container {
+    padding: 27px;
+  }
+
+  .help-container {
+    font-size: 13px;
+  }
+}

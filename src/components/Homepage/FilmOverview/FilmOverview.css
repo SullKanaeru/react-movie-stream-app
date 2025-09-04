@@ -1,0 +1,175 @@
+.film-overview .card {
+  width: 350px;
+  background-color: rgba(24, 26, 28, 1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
+}
+
+.film-overview .options {
+  width: 100%;
+  padding: 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.film-overview .film-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 254px;
+  object-fit: cover;
+}
+
+.film-overview .controller {
+  margin-top: 10px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.film-overview .controller .button-container {
+  height: 54px;
+  width: 54px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.film-overview .controller i {
+  font-size: 20px;
+}
+
+.film-overview .controller .left-controller {
+  display: flex;
+  gap: 10px;
+}
+
+.film-overview .controller .right-controller {
+  margin-left: auto;
+}
+
+.film-overview .controller .left-controller .play-btn,
+.film-overview .controller .left-controller .check-btn {
+  color: white;
+}
+
+.film-overview .controller .left-controller .play-btn-border {
+  background-color: white;
+}
+
+.film-overview .controller .left-controller .play-btn {
+  color: rgba(24, 26, 28, 1);
+}
+
+.film-overview .age {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgba(205, 241, 255, 0.3);
+}
+
+.film-overview .current-episode,
+.film-overview .current-duration,
+.film-overview .episode,
+.film-overview .duration {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.film-overview .seek-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film-overview .seek-container .progress-bar {
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgba(61, 65, 66, 1);
+}
+
+.film-overview .seek-container .progress {
+  width: 50%;
+  height: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-self: flex-start;
+  background-color: rgba(50, 84, 255, 1);
+}
+
+.film-overview .seek-container .film-duration {
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+  text-wrap: nowrap;
+}
+
+.film-overview .genres {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.film-overview .genres i {
+  font-size: 7px;
+}
+
+/* Responsive to Phone */
+@media screen and (max-width: 480px) {
+  .film-overview .card {
+    width: 200px;
+  }
+
+  .film-overview .film-image {
+    height: 100px;
+  }
+
+  .film-overview .options {
+    padding: 15px;
+  }
+
+  .film-overview .controller .button-container {
+    height: 35px;
+    width: 35px;
+  }
+
+  .film-overview .controller i {
+    font-size: 12px;
+  }
+
+  .film-overview .age {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .film-overview .current-episode,
+  .film-overview .current-duration,
+  .film-overview .episode,
+  .film-overview .duration {
+    font-size: 13px;
+  }
+
+  .film-overview .seek-container .film-duration {
+    font-size: 12px;
+  }
+
+  .film-overview .genres {
+    font-size: 13px;
+  }
+
+  .film-overview .genres i {
+    font-size: 5px;
+  }
+}
