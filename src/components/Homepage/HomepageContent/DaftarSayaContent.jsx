@@ -1,4 +1,4 @@
-import "./daftarSayaContent.css";
+import "./DaftarSayaContent.css";
 
 const DaftarSayaContent = ({ filmsData }) => {
   const films = filmsData;

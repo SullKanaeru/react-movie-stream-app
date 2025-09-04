@@ -2,6 +2,7 @@
   "name": "mission-5-fe",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://movie-stream-app.zulhanarif.my.id/",
   "type": "module",
   "scripts": {
     "dev": "vite",
